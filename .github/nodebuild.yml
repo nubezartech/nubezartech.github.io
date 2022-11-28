@@ -18,7 +18,7 @@ jobs:
           node-version: '18.0'
           registry-url: npm.pkg.github.com/
       — name: Install dependencies using a safe clean install
-        run: npm ci — ignore-scripts
+        run: npm install --no-interaction
         env:
           NODE_AUTH_TOKEN: ${{secrets.GH_TOKEN}}
 
