@@ -1,73 +1,193 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
-    <link href="../css/bootstrap-nightshade.css" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-nightshade.css" rel="stylesheet" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
 
     <title>NubezarTech</title>
 
     <!-- Cheatsheet -->
 
-    <link href="cheatsheet-nights.css" rel="stylesheet">
+    <link href="cheatsheet-nights.css" rel="stylesheet" />
     <style>
-      .d-light-inline { display: inline !important; }
-      .d-dark-inline { display: none !important; }
-      html.dark .d-light-inline { display: none !important; }
-      html.dark .d-dark-inline { display: inline !important; }
+      .d-light-inline {
+        display: inline !important;
+      }
+      .d-dark-inline {
+        display: none !important;
+      }
+      html.dark .d-light-inline {
+        display: none !important;
+      }
+      html.dark .d-dark-inline {
+        display: inline !important;
+      }
     </style>
   </head>
   <body class="">
-    <header class="bd-header bg-dark py-3 d-flex align-items-stretch border-bottom border-dark">
+    <header
+      class="bd-header bg-dark py-3 d-flex align-items-stretch border-bottom border-dark"
+    >
       <div class="container-fluid d-flex align-items-center">
         <h1 class="d-flex align-items-center fs-4 text-white mb-0">
           Soluciones Informáticas NubezarTech
         </h1>
         <!-- ***** ***** ***** THE BUTTON GOES HERE ***** ***** ***** -->
         <div class="btn-group ms-auto" role="group">
-          <a id="darkmode-button" class="btn btn-outline-secondary"><i class="fa fa-moon-o fa-fw d-none d-light-inline" title="Switch to dark mode"></i><i class="fa fa-sun-o fa-fw d-none d-dark-inline" title="Switch to light mode"></i></a>
+          <a id="darkmode-button" class="btn btn-outline-secondary"
+            ><i
+              class="fa fa-moon-o fa-fw d-none d-light-inline"
+              title="Switch to dark mode"
+            ></i
+            ><i
+              class="fa fa-sun-o fa-fw d-none d-dark-inline"
+              title="Switch to light mode"
+            ></i
+          ></a>
 
           <div class="btn-group" role="group">
-            <button id="btnGroupDrop1" type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"></button>
+            <button
+              id="btnGroupDrop1"
+              type="button"
+              class="btn btn-outline-secondary dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            ></button>
             <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-              <li><a id="darkmode-off-button" class="dropdown-item">Set Light Mode</a></li>
-              <li><a id="darkmode-on-button" class="dropdown-item">Set Dark Mode</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a id="darkmode-off-button-no-save" class="dropdown-item">Set Light Mode (no save)</a></li>
-              <li><a id="darkmode-on-button-no-save" class="dropdown-item">Set Dark Mode (no save)</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a id="darkmode-forget" class="dropdown-item">Reset Mode</a></li>
+              <li>
+                <a id="darkmode-off-button" class="dropdown-item"
+                  >Set Light Mode</a
+                >
+              </li>
+              <li>
+                <a id="darkmode-on-button" class="dropdown-item"
+                  >Set Dark Mode</a
+                >
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a id="darkmode-off-button-no-save" class="dropdown-item"
+                  >Set Light Mode (no save)</a
+                >
+              </li>
+              <li>
+                <a id="darkmode-on-button-no-save" class="dropdown-item"
+                  >Set Dark Mode (no save)</a
+                >
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a id="darkmode-forget" class="dropdown-item">Reset Mode</a>
+              </li>
             </ul>
           </div>
         </div>
         <!-- ***** ***** ***** THE BUTTON GOES HERE ***** ***** ***** -->
       </div>
     </header>
-    <aside class="bd-aside sticky-xl-top text-muted align-self-start mb-3 mb-xl-5 px-2">
-      <h2 class="h6 pt-4 pb-3 mb-4 border-bottom">Repositorios</h2>
+    <aside
+      class="bd-aside sticky-xl-top text-muted align-self-start mb-3 mb-xl-5 px-2"
+    >
+      <h2 class="h6 pt-4 pb-3 mb-4 border-bottom">Contenido</h2>
       <nav class="small" id="toc">
         <ul class="list-unstyled">
           <li class="my-2">
-            <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#contents-collapse" aria-controls="contents-collapse">NubezarTech</button>
-            <ul class="list-unstyled ps-3 collapse" id="contents-collapse">
-              <li><a class="d-inline-flex align-items-center rounded" href="https://github.com/nubezartech/nubezartech.github.io" target="_blank">nubezartech.github.io</a></li>
+            <button
+              class="btn d-inline-flex align-items-center collapsed"
+              data-bs-toggle="collapse"
+              aria-expanded="false"
+              data-bs-target="#repos-collapse"
+              aria-controls="contents-collapse"
+            >
+              Repositories
+            </button>
+            <ul class="list-unstyled ps-3 collapse" id="repos-collapse">
+              <li>
+                <a
+                  class="d-inline-flex align-items-center rounded"
+                  href="https://github.com/nubezartech/nubezartech.github.io"
+                  target="_blank"
+                  >nubezartech.github.io</a
+                >
+              </li>
             </ul>
           </li>
           <li class="my-2">
-            <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#forms-collapse" aria-controls="forms-collapse">NubezarTechDev</button>
-            <ul class="list-unstyled ps-3 collapse" id="forms-collapse"></li>
+            <button
+              class="btn d-inline-flex align-items-center collapsed"
+              data-bs-toggle="collapse"
+              aria-expanded="false"
+              data-bs-target="#devtools-collapse"
+              aria-controls="contents-collapse"
+            >
+              Development Tools on Terminal
+            </button>
+            <ul class="list-unstyled ps-3 collapse" id="dev-collapse">
+              <li>
+                <a
+                  class="d-inline-flex align-items-center rounded"
+                  href="#devtools_aliases"
+                  target="_blank"
+                  >Aliases</a
+                >
+              </li>
             </ul>
           </li>
         </ul>
       </nav>
     </aside>
     <div class="bd-cheatsheet container-fluid">
-      <section>
-        <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Contents</h2>
+      <section id="devtools">
+        <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">
+          Development Tools on Terminal
+        </h2>
+
+        <article class="my-3" id="devtools_aliases">
+          <div
+            class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"
+          >
+            <h3>Aliases</h3>
+          </div>
+          <div class="bd-content">
+            <p>
+              <h4>Surfing on directories</h4>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">..="cd .."</li>
+                <li class="list-group-item">...="cd ../.."</li>
+                <li class="list-group-item">ll="ls -l"</li>
+                <li class="list-group-item">la="ls -la"</li>
+                <li class="list-group-item">~="cd ~"</li>
+                <li class="list-group-item">dotfiles='cd $DOTFILES_PATH'</li>
+              </ul>
+            </p>
+            <p>
+              <h4>Git helpers</h4>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">g="git"</li>
+                <li class="list-group-item">gall="git add ."</li>
+                <li class="list-group-item">gc="git commit"</li>
+                <li class="list-group-item">gps="git push"</li>
+                <li class="list-group-item">gpl="git pull"</li>
+              </ul>
+            </p>
+            <p>
+              <h4>Tools</h4>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">k="kill -9"</li>
+                <li class="list-group-item">c.="(code $PWD &>/dev/null &)"</li>
+                <li class="list-group-item">o.="open ."</li>
+              </ul>
+            </p>
+          </div>
+        </article>
       </section>
     </div>
 
@@ -77,24 +197,27 @@
     <!-- DarkMode.js -->
     <script src="../js/darkmode.js"></script>
     <script>
-      document.querySelector("#darkmode-button").onclick = function(e){
+      document.querySelector("#darkmode-button").onclick = function (e) {
         darkmode.toggleDarkMode();
-      }
-      document.querySelector("#darkmode-off-button").onclick = function(e){
-        darkmode.setDarkMode(false);  // save=true is default
-      }
-      document.querySelector("#darkmode-on-button").onclick = function(e){
-        darkmode.setDarkMode(true);  // save=true is default
-      }
-      document.querySelector("#darkmode-off-button-no-save").onclick = function(e){
-        darkmode.setDarkMode(false, false);
-      }
-      document.querySelector("#darkmode-on-button-no-save").onclick = function(e){
+      };
+      document.querySelector("#darkmode-off-button").onclick = function (e) {
+        darkmode.setDarkMode(false); // save=true is default
+      };
+      document.querySelector("#darkmode-on-button").onclick = function (e) {
+        darkmode.setDarkMode(true); // save=true is default
+      };
+      document.querySelector("#darkmode-off-button-no-save").onclick =
+        function (e) {
+          darkmode.setDarkMode(false, false);
+        };
+      document.querySelector("#darkmode-on-button-no-save").onclick = function (
+        e
+      ) {
         darkmode.setDarkMode(true, false);
-      }
-      document.querySelector("#darkmode-forget").onclick = function(e){
+      };
+      document.querySelector("#darkmode-forget").onclick = function (e) {
         darkmode.resetDarkMode();
-      }
+      };
     </script>
 
     <!-- Cheatsheet -->
