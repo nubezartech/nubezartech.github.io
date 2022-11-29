@@ -4,7 +4,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <link rel="stylesheet" href="./node_modules/devterminal/css/xterm.css" />
+    <script src="./node_modules/devterminal/lib/xterm.js"></script>
     <!-- Bootstrap CSS -->
     <link href="./assets/css/bootstrap-nightshade.css" rel="stylesheet" />
     <link
@@ -266,10 +267,34 @@
               <li class="list-group-item">o.="open ."</li>
             </ul>
           </div>
+          <div id="terminal"></div>
+          
         </article>
       </section>
     </div>
-
+    <script>
+      var term = new Terminal({
+        fontSize: 12,
+        // theme: themeName,
+        cols: 80,
+        rows: 24,
+        fontFamily: "monospace;",
+        bellStyle: "sound",
+        cursorBlink: true,
+      });
+      term.open(document.getElementById("terminal"));
+      term.write("Hello from \x1B[1;3;31mxterm.js\x1B[0m $ ");
+      term.prompt = () => {
+        term.write("\r\n$ ");
+      };
+      term.onKey((e) => {
+        console.log(e.key);
+        term.write(e.key);
+        if (e.key == "\r") {
+          term.prompt();
+        }
+      });
+    </script>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 
