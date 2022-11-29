@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="./assets/css/bootstrap-nightshade.css" rel="stylesheet" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+
+    <title>NubezarTech_GhDev</title>
+
+    <!-- Cheatsheet -->
+    <link href="./assets/cheatsheet-nights.css" rel="stylesheet" />
+    <link href="./assets/main.css" rel="stylesheet" />
+  </head>
+  <body class="">
+    <header
+      class="bd-header bg-dark py-3 d-flex align-items-stretch border-bottom border-dark"
+    >
+      <div class="container-fluid d-flex align-items-center">
+        <h1 class="d-flex align-items-center fs-4 text-white mb-0">
+          NubezarTech DevelopmentTools
+        </h1>
+        <!-- ***** ***** ***** THE BUTTON GOES HERE ***** ***** ***** -->
+        <div class="btn-group ms-auto" role="group">
+          <a id="darkmode-button" class="btn btn-outline-secondary"
+            ><i
+              class="fa fa-moon-o fa-fw d-none d-light-inline"
+              title="Switch to dark mode"
+            ></i
+            ><i
+              class="fa fa-sun-o fa-fw d-none d-dark-inline"
+              title="Switch to light mode"
+            ></i
+          ></a>
+
+          <div class="btn-group" role="group">
+            <button
+              id="btnGroupDrop1"
+              type="button"
+              class="btn btn-outline-secondary dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            ></button>
+            <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <li>
+                <a id="darkmode-off-button" class="dropdown-item"
+                  >Set Light Mode</a
+                >
+              </li>
+              <li>
+                <a id="darkmode-on-button" class="dropdown-item"
+                  >Set Dark Mode</a
+                >
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a id="darkmode-off-button-no-save" class="dropdown-item"
+                  >Set Light Mode (no save)</a
+                >
+              </li>
+              <li>
+                <a id="darkmode-on-button-no-save" class="dropdown-item"
+                  >Set Dark Mode (no save)</a
+                >
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a id="darkmode-forget" class="dropdown-item">Reset Mode</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- ***** ***** ***** THE BUTTON GOES HERE ***** ***** ***** -->
+      </div>
+    </header>
+    <aside
+      class="bd-aside sticky-xl-top text-muted align-self-start mb-3 mb-xl-5 px-2"
+    >
+      <h2 class="h6 pt-4 pb-3 mb-4 border-bottom">Contenido</h2>
+      <nav class="small" id="toc">
+        <ul class="list-unstyled">
+          <li class="my-2">
+            <button
+              class="btn d-inline-flex align-items-center collapsed"
+              data-bs-toggle="collapse"
+              aria-expanded="false"
+              data-bs-target="#ghorgs-collapse"
+              aria-controls="contents-collapse"
+            >
+              Github Orgs
+            </button>
+            <ul class="list-unstyled ps-3 collapse" id="ghorgs-collapse">
+              <li>
+                <a
+                  class="d-inline-flex align-items-center rounded"
+                  href="#nubezartech"
+                  >NubezarTech</a
+                >
+              </li>
+              <li>
+                <a
+                  class="d-inline-flex align-items-center rounded"
+                  href="#nubezartechdev"
+                  >NubezarTechDev</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="my-2">
+            <button
+              class="btn d-inline-flex align-items-center collapsed"
+              data-bs-toggle="collapse"
+              aria-expanded="false"
+              data-bs-target="#devtools-collapse"
+              aria-controls="contents-collapse"
+            >
+              DevTools on Terminal
+            </button>
+            <ul class="list-unstyled ps-3 collapse" id="devtools-collapse">
+              <li>
+                <a
+                  class="d-inline-flex align-items-center rounded"
+                  href="#sdirectories"
+                  >Surfing on directories</a
+                >
+              </li>
+              <li>
+                <a class="d-inline-flex align-items-center rounded" href="#git"
+                  >Git aliases and helpers</a
+                >
+              </li>
+              <li>
+                <a
+                  class="d-inline-flex align-items-center rounded"
+                  href="#tools"
+                  >Tools</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <div class="bd-cheatsheet container-fluid">
+      <section id="ghorgs">
+        <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">
+          Organizations
+        </h2>
+
+        <article class="my-3" id="nubezartech">
+          <div
+            class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"
+          >
+            <h3>Org: NubezarTech</h3>
+          </div>
+          <div class="bd-content">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <a href="">Repo 1</a>: For general use repo.
+              </li>
+              <li class="list-group-item">
+                <a href="">Repo 2</a>: For general use repo.
+              </li>
+            </ul>
+          </div>
+        </article>
+        <article class="my-3" id="nubezartechdev">
+          <div
+            class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"
+          >
+            <h3>Org: NubezarTechDev</h3>
+          </div>
+          <div class="bd-content">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <a href="">Repo 1</a>: For development use repo.
+              </li>
+              <li class="list-group-item">
+                <a href="">Repo 2</a>: For development use repo.
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+      <section id="devtools">
+        <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">
+          DevTools on Terminal
+        </h2>
+
+        <article class="my-3" id="sdirectories">
+          <div
+            class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"
+          >
+            <h3>Surfing on directories</h3>
+          </div>
+          <div class="bd-content">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <b>Directorio anterior</b><br />
+                <code>..</code> =>
+                <code>cd ..</code>
+              </li>
+              <li class="list-group-item">
+                <b>Directorio anterior x2</b><br />
+                <code>...</code> =>
+                <code>cd ../..</code>
+              </li>
+              <li class="list-group-item">
+                <b>Listar todo</b><br />
+                <code>ll</code> =>
+                <code>ls -l</code>
+              </li>
+              <li class="list-group-item">
+                <b>-</b><br />
+                <code>la</code> =>
+                <code>ls -la</code>
+              <li class="list-group-item">
+                <b>Ir a directorio del usuario.</b><br />
+                <code>~</code> =>
+                <code>cd ~</code>
+              </li>
+              <li class="list-group-item">
+                <b>Ir a directorio del los dotfiles.</b><br />
+                <code>dotfiled</code> =>
+                <code>cd $DOTFILES_PATH</code>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <article class="my-3" id="git">
+          <div
+            class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"
+          >
+            <h3>Git aliases and helpers</h3>
+          </div>
+          <div class="bd-content">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <b>Git (alias)
+                <code>git</code> =>
+                <code>git</code>
+              </li>
+              <li class="list-group-item">gall="git add ."</li>
+              <li class="list-group-item">gc="git commit"</li>
+              <li class="list-group-item">gps="git push"</li>
+              <li class="list-group-item">gpl="git pull"</li>
+            </ul>
+          </div>
+        </article>
+        <article class="my-3" id="tools">
+          <div
+            class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"
+          >
+            <h3>Tools</h3>
+          </div>
+          <div class="bd-content">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">k="kill -9"</li>
+              <li class="list-group-item">c.="(code $PWD &>/dev/null &)"</li>
+              <li class="list-group-item">o.="open ."</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- DarkMode.js -->
+    <script src="./assets/js/darkmode.js"></script>
+    <script src="./assets/theme_toggle.js"></script>
+
+    <!-- Cheatsheet -->
+    <script src="./assets/cheatsheet.js"></script>
+  </body>
+</html>
