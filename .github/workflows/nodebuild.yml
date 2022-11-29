@@ -9,15 +9,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      — name: checks out code
+      - name: checks out code
         uses: actions/checkout@v2
-      — name: Use Node.js
+      - name: Use Node.js
         uses: actions/setup-node@v1
         with:
           always-auth: true
           node-version: '18.0'
           registry-url: npm.pkg.github.com/
-      — name: Install dependencies using a safe clean install
+      - name: Install dependencies using a safe clean install
         run: npm install --no-interaction
         env:
           NODE_AUTH_TOKEN: ${{secrets.GH_TOKEN}}
